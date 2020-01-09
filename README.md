@@ -1,10 +1,10 @@
 # PostgreSQL Auto-Conf
 
-[![Build Status](https://travis-ci.org/Tecnativa/docker-postgres-autoconf.svg?branch=master)](https://travis-ci.org/Tecnativa/docker-postgres-autoconf)
-[![Docker Pulls](https://img.shields.io/docker/pulls/tecnativa/postgres-autoconf.svg)](https://hub.docker.com/r/tecnativa/postgres-autoconf)
-[![Layers](https://images.microbadger.com/badges/image/tecnativa/postgres-autoconf.svg)](https://microbadger.com/images/tecnativa/postgres-autoconf)
-[![Commit](https://images.microbadger.com/badges/commit/tecnativa/postgres-autoconf.svg)](https://microbadger.com/images/tecnativa/postgres-autoconf)
-[![License](https://img.shields.io/github/license/Tecnativa/docker-postgres-autoconf.svg)](https://github.com/Tecnativa/docker-postgres-autoconf/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/it-projects-llc/docker-postgres-autoconf.svg?branch=master)](https://travis-ci.org/it-projects-llc/docker-postgres-autoconf)
+[![Docker Pulls](https://img.shields.io/docker/pulls/itprojectsllc/postgres-autoconf.svg)](https://hub.docker.com/r/itprojectsllc/postgres-autoconf)
+[![Layers](https://images.microbadger.com/badges/image/itprojectsllc/postgres-autoconf.svg)](https://microbadger.com/images/itprojectsllc/postgres-autoconf)
+[![Commit](https://images.microbadger.com/badges/commit/itprojectsllc/postgres-autoconf.svg)](https://microbadger.com/images/itprojectsllc/postgres-autoconf)
+[![License](https://img.shields.io/github/license/itprojectsllc/docker-postgres-autoconf.svg)](https://github.com/itprojectsllc/docker-postgres-autoconf/blob/master/LICENSE)
 
 ## What
 
