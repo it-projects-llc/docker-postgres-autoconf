@@ -33,7 +33,7 @@ stages:
 env:
   global:
     - LATEST_RELEASE=12-alpine
-    - DOCKER_REPO=itprojectsllc/postgres-autoconf
+    - DOCKER_REPO=itpp/postgres-autoconf
   jobs:
     - DOCKER_TAG=9.6-alpine
     - DOCKER_TAG=10-alpine
