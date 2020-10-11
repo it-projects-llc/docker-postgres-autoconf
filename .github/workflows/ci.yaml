@@ -67,6 +67,6 @@ jobs:
         env:
           DOCKER_REPO_SUFFIX: /postgres-autoconf
           REGISTRY_HOST: docker.pkg.github.com
-          REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REGISTRY_USERNAME: ${{ github.actor }}
         run: ./hooks/push
