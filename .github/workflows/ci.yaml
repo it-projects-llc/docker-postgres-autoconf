@@ -65,7 +65,7 @@ jobs:
       - name: push to github registry
         if: github.repository == 'itpp-labs/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
         env:
-          DOCKER_REPO_SUFFIX: /doodba
+          DOCKER_REPO_SUFFIX: /postgres-autoconf
           REGISTRY_HOST: docker.pkg.github.com
           REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           REGISTRY_USERNAME: ${{ github.actor }}
