@@ -4,6 +4,7 @@ from plumbum.cmd import date, docker
 
 # Check environment variables are present
 DOCKER_TAG = local.env["DOCKER_TAG"]
+DOCKER_REPO = local.env["DOCKER_REPO"]
 COMMIT = local.env.get("GIT_SHA1")
 DATE = date("--rfc-3339", "ns")
 
