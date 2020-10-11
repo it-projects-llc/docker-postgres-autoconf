@@ -39,10 +39,10 @@ jobs:
           - "10"
           - "9.6"
     env:
-      # Indicates what's the equivalent to tecnativa/postgres-autoconf:latest image
+      # Indicates what's the equivalent to itpp-labs/postgres-autoconf:latest image
       LATEST_RELEASE: "14.0"
       # Variables found by default in Docker Hub builder
-      DOCKER_REPO: tecnativa/postgres-autoconf
+      DOCKER_REPO: itpp-labs/postgres-autoconf
       DOCKER_TAG: ${{ matrix.pg_version }}-alpine
       GIT_SHA1: ${{ github.sha }}
     steps:
@@ -56,14 +56,14 @@ jobs:
       - run: ./tests/test.py -v
       # Push
       - name: push to docker hub
-        if: github.repository == 'Tecnativa/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
+        if: github.repository == 'itpp-labs/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
         env:
           REGISTRY_HOST: docker.io
           REGISTRY_TOKEN: ${{ secrets.DOCKERHUB_PASSWORD }}
           REGISTRY_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         run: ./hooks/push
       - name: push to github registry
-        if: github.repository == 'Tecnativa/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
+        if: github.repository == 'itpp-labs/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
         env:
           REGISTRY_HOST: ghcr.io
           REGISTRY_TOKEN: ${{ secrets.GHCR_PASSWORD }}
