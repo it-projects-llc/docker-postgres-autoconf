@@ -56,7 +56,7 @@ jobs:
       - run: ./tests/test.py -v
       # Push
       - name: push to docker hub
-        if: github.repository == 'itpp-labs/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
+        if: github.repository == 'Tecnativa/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
         env:
           REGISTRY_HOST: docker.io
           REGISTRY_TOKEN: ${{ secrets.DOCKERHUB_PASSWORD }}
@@ -65,7 +65,8 @@ jobs:
       - name: push to github registry
         if: github.repository == 'itpp-labs/docker-postgres-autoconf' && github.ref == 'refs/heads/master'
         env:
-          REGISTRY_HOST: ghcr.io
-          REGISTRY_TOKEN: ${{ secrets.GHCR_PASSWORD }}
-          REGISTRY_USERNAME: ${{ secrets.GHCR_USERNAME }}
+          DOCKER_REPO_SUFFIX: /doodba
+          REGISTRY_HOST: docker.pkg.github.com
+          REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          REGISTRY_USERNAME: ${{ github.actor }}
         run: ./hooks/push
