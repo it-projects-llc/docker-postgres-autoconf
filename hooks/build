@@ -18,6 +18,6 @@ docker[
     "--build-arg",
     "BASE_TAG={}".format(DOCKER_TAG),
     "--tag",
-    "itpp-labs/postgres-autoconf:{}".format(DOCKER_TAG),
+    "{}:{}".format(DOCKER_REPO, DOCKER_TAG),
     ".",
 ] & FG
