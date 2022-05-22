@@ -28,6 +28,7 @@ jobs:
 
   build-test-push:
     runs-on: ubuntu-latest
+    environment: production
     needs: pre-commit
     strategy:
       fail-fast: false
